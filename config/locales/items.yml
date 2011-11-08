@@ -1,0 +1,12 @@
+pt-BR:
+  activerecord:
+    models:
+      item:
+        one: "Item"
+        other: "Itens"
+
+    attributes:
+      item:
+        order: "Ordem"
+        flow: "Fluxo"
+
