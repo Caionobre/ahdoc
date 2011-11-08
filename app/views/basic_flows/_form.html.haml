@@ -1,0 +1,19 @@
+= form_for(resource, :url => resource_form_path) do |f|
+  - if resource.errors.any?
+    %div#error_explanation
+      %h2
+        #{ pluralize(resource.errors.count, "error") } prohibited this basic_flow from being saved:
+
+      %ul
+        - resource.errors.full_messages.each do |msg|
+          %li
+            = msg
+  - [:flow, :order].each do |field|
+    %div.field
+      = f.label field
+      %br
+      = f.text_field field
+
+  %div.actions
+    = f.submit 
+    = back_link_to

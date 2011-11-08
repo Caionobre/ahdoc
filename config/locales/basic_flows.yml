@@ -1,0 +1,13 @@
+#encoding: utf-8
+pt-BR:
+  activerecord:
+    models:
+      basic_flow:
+        one: "Fluxo Básico"
+        other: "Fluxos Básicos"
+
+    attributes:
+      basic_flow:
+        order: "Ordem"
+        flow: "Fluxo"
+
