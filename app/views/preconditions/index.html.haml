@@ -1,0 +1,20 @@
+= list_title
+
+%table.records
+  %tr
+    %th
+      = resource_class.human_attribute_name :flow
+    %th
+
+  - collection.each do |resource| 
+    %tr
+      %td
+        = resource.flow
+      %td
+        = edit_link_to resource
+        = destroy_link_to resource
+
+%br
+
+= new_link_to :female
+= up_link_to

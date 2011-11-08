@@ -1,0 +1,13 @@
+pt-BR:
+  activerecord:
+    models:
+      precondition:
+        one: "Pré-condição"
+        other: "Pré-condições"
+
+    attributes:
+      precondition:
+        description: "Descrição"
+        order: "Ordem"
+        flow: "Fluxo"
+
