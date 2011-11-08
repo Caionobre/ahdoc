@@ -1,0 +1,12 @@
+pt-BR:
+  activerecord:
+    models:
+      actor:
+        one: "Ator"
+        other: "Atores"
+
+    attributes:
+      actor:
+        name: "Nome"
+        group: "Módulo"
+
