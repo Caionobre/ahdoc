@@ -1,0 +1,49 @@
+= form_for(resource, :url => resource_form_path) do |f| 
+  - if resource.errors.any?
+    %div#error_explanation
+      %h2
+        #{ pluralize(resource.errors.count, "error") } prohibited this document from being saved:
+
+      %ul
+        - resource.errors.full_messages.each do |msg| 
+          %li
+            = msg
+
+  %div.field
+    = f.label :title
+    %br
+    = f.text_field :title
+
+  %div.field
+    = f.label :description
+    %br
+    = f.text_area :description, :rows => 5
+  
+  %div.field
+    = f.label :actor_id
+    %br
+    = f.select :actor_id, actors_for_select(parent), {:prompt => 'Selecione'}
+
+  %div.field
+    = f.label :use_case 
+    %br
+    = f.text_field :use_case 
+
+  %div.field
+    = f.label :sequence_diagram 
+    %br 
+    = f.text_field :sequence_diagram
+
+  %div.field
+    = f.label :relational_diagram
+    %br
+    = f.text_field :relational_diagram
+
+  %div.field
+    = f.label :note 
+    %br
+    = f.text_field :note
+
+  %div.actions
+    = f.submit
+    = back_link_to

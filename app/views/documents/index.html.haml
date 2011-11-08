@@ -1,0 +1,32 @@
+= list_title
+
+%table.records
+  %tr
+    %th
+      = Document.human_attribute_name :title
+    %th
+      = Document.human_attribute_name :actor
+    %th
+
+  - collection.each do |resource| 
+    %tr
+      %td
+        = resource.title
+      %td
+        = resource.actor
+      %td
+        = edit_link_to resource
+        = destroy_link_to resource
+    %tr
+      %td{:colspan => 3}
+        = link_to Precondition.model_name.human, document_preconditions_path(resource)
+        = link_to BasicFlow.model_name.human, document_basic_flows_path(resource)
+        = link_to AlternativeFlow.model_name.human, document_alternative_flows_path(resource)
+        = link_to Poscondition.model_name.human, document_posconditions_path(resource)
+        = link_to Prototype.model_name.human, document_prototypes_path(resource) 
+        = link_to DataDictionary.model_name.human, document_data_dictionaries_path(resource)
+
+%br
+
+= new_link_to
+= up_link_to

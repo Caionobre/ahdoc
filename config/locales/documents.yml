@@ -1,0 +1,19 @@
+pt-BR:
+  activerecord:
+    models:
+      document:
+        one: "Documento"
+        other: "Documentos"
+
+    attributes:
+      document:
+        title: "Título"
+        description: "Descrição"
+        actor: "Ator"
+        group: "Módulo"
+        use_case: "Cenário chave"
+        sequence_diagram: "Diagrama de Sequência"
+        relational_diagram: "Diagrama Relacional"
+        note: "Observação"
+
+
