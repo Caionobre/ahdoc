@@ -1,0 +1,34 @@
+= form_for(resource, :url => resource_form_path) do |f|
+  - if resource.errors.any?
+    %div#error_explanation
+      %h2
+        #{ pluralize(resource.errors.count, "error") } prohibited this group from being saved:
+
+      %ul
+        - resource.errors.full_messages.each do |msg|
+          %li
+            = msg
+
+  %div.field
+    = f.label :name
+    %br
+    = f.text_field :name
+
+  %div.field
+    = f.label :email
+    %br
+    = f.text_field :email
+
+  %div.field
+    = f.label :password
+    %br
+    = f.password_field :password
+
+  %div.field
+    = f.label :password_confirmation
+    %br
+    = f.password_field :password_confirmation
+  
+  %div.actions
+    = f.submit
+    = back_link_to
