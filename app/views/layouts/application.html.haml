@@ -1,0 +1,39 @@
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %title
+      Documentação do sistema SALUS
+    %meta{:"http-equiv" => "Content-Type", :content => "text/html; charset=UTF-8"}
+    = stylesheet_link_tag :all, :style, :table
+    = javascript_include_tag :defaults
+    = csrf_meta_tag
+
+  %body
+    %div.main
+      %div.header
+        %div.header_resize
+          %div.logo
+            %h1
+              %span
+                Documentação
+              SALUS
+              %small
+                Sistema de saúde
+
+          %div.clr
+
+      %div.content
+        %div.content_resize
+          %div.mainbar
+            %div.article
+              = yield
+
+          %div.clr
+
+      %div.footer
+        %div.footer_resize
+          %p.lf
+            &copy; Copyright Connecta Sistemas.
+          %p.rf
+            = logout_link_to
+          %div.clr

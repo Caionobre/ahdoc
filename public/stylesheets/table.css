@@ -1,0 +1,36 @@
+table.records {
+  clear: both;
+  width: 100%; }
+  table.records td {
+    border: 0; }
+  table.records th {
+    border: 0;
+    text-align: left; }
+  table.records thead th, table.records tfoot th {
+    background: #DCDCDC;
+    border-top: 1px solid #8B8989; }
+  table.records tfoot th {
+    border-top: 1px solid #8B8989;
+    border-bottom: 1px solid #8B8989;
+    font-weight: normal;
+    text-align: right; }
+  table.records tbody tr:nth-child(even) td, table.records tbody tr:nth-child(even) th {
+    background: #f5f5f5; }
+  table.records tbody tr:hover td, table.records tbody tr:hover th {
+    background: #fffaf0; }
+  table.records tbody td, table.records tbody th {
+    border-top: 1px solid #eaeaea;
+    line-height: 30px;
+    padding: 0 0 0 5px; }
+  table.records tbody th {
+    font-weight: normal; }
+  table.records .small {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    width: 1%;
+    white-space: nowrap; }
+  table.records .empty {
+    text-align: center;
+    font-style: italic;
+    color: #999999; }
