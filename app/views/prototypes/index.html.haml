@@ -1,0 +1,24 @@
+= list_title
+
+%table.records
+  %tr
+    %th
+      = resource_class.human_attribute_name :description
+    %th
+      = resource_class.human_attribute_name :link
+    %th
+
+  - collection.each do |resource|
+    %tr
+      %td
+        = resource.description
+      %td
+        = resource.link
+      %td
+        = edit_link_to resource
+        = destroy_link_to resource
+
+%br
+
+= new_link_to
+= up_link_to

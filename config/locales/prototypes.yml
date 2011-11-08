@@ -1,0 +1,12 @@
+pt-BR:
+  activerecord:
+    models:
+      prototype:
+        one: "Protótipo"
+        other: "Protótipos"
+
+    attributes:
+      prototype:
+        link: "Caminho"
+        description: "Descrição"
+
