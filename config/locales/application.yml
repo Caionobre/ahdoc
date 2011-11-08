@@ -1,0 +1,23 @@
+pt-BR:
+  title:
+    sign_in: "Acesso ao sistema"
+    list: "Listagem de %{resource_name}"
+    edit: "Editando %{resource_name}"
+    new:
+      male: "Novo %{resource_name}"
+      female: "Nova %{resource_name}"
+
+  link:
+    new:
+      male: "Novo %{model}"
+      female: "Nova %{model}"
+    edit: "Editar"
+    destroy: "Excluir"
+    back: "Cancelar"
+    up: "Acima"
+    logout: "Sair"
+
+  message:
+    confirm:
+      logout: "Deseja mesmo sair da Documentação Salus?"
+      destroy: "Você realmente deseja excluir este registro?"
