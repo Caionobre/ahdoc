@@ -1,0 +1,17 @@
+defaults: &defaults
+  adapter: postgresql
+  encoding: unicode
+  reconnect: true
+  min_messages: warning
+  pool: 15
+  timeout: 5000
+  username: ahdoc
+  password: ahdoc
+
+development:
+  <<: *defaults
+  database: ahdoc_development
+
+test:
+  <<: *defaults
+  database: ahdoc_test
