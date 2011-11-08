@@ -1,0 +1,8 @@
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/
+/test/
+/.infinity_test
+/config/database.yml
+/.rvmrc
