@@ -1,0 +1,13 @@
+pt-BR:
+  activerecord:
+    models:
+      poscondition:
+        one: "Pós-condição"
+        other: "Pós-condições"
+
+    attributes:
+      poscondition:
+        description: "Descrição"
+        order: "Ordem"
+        flow: "Fluxo"
+
