@@ -1,0 +1,12 @@
+pt-BR:
+  activerecord:
+    models:
+      alternative_flow:
+        one: "Fluxo Alternativo"
+        other: "Fluxos Alternativos"
+
+    attributes:
+      alternative_flow:
+        order: "Ordem"
+        title: "Título"
+
