@@ -1,0 +1,12 @@
+pt-BR:
+  activerecord:
+    models:
+      group:
+        one: "Módulo"
+        other: "Módulos"
+
+    attributes:
+      group:
+        title: "Título"
+        description: "Descrição"
+

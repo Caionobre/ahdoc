@@ -1,0 +1,25 @@
+= list_title
+
+%table.records
+  %tr
+    %th
+      = resource_class.human_attribute_name :title
+    %th      
+      = resource_class.human_attribute_name :description
+    %th
+
+  - collection.each do |resource|
+    %tr
+      %td
+        = resource.title
+      %td
+        = resource.description
+      %td
+        = edit_link_to resource
+        = destroy_link_to resource
+        = link_to Actor.model_name.human, group_actors_path(resource)
+        = link_to Document.model_name.human, group_documents_path(resource)
+
+%br 
+
+= new_link_to
