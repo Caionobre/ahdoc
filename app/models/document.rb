@@ -1,5 +1,5 @@
 class Document < ActiveRecord::Base
-  DEPENDENCIES = [:preconditions, :basic_flows, :posconditions, :prototypes, :data_dictionaries, :alternative_flows]
+  DEPENDENCIES = [:preconditions, :basic_flows, :posconditions, :prototypes, :alternative_flows]
 
   belongs_to :group
   belongs_to :actor

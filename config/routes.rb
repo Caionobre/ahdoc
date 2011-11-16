@@ -21,6 +21,5 @@ Ahdoc::Application.routes.draw do
     resources :alternative_flows
     resources :posconditions
     resources :prototypes
-    resources :data_dictionaries
   end
 end

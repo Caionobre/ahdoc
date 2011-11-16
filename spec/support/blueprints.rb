@@ -52,12 +52,6 @@ Prototype.blueprint do
   link {"/home/fig1.png"}
 end
 
-DataDictionary.blueprint do
-  document
-  description {"Figura 1"}
-  link {"/home/fig1.png"}
-end
-
 User.blueprint do
   name        {"Jhon Doe"}
   email       {"jhon.doe@salus.com"}
