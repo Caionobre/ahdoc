@@ -22,6 +22,12 @@
 
           %div.clr
 
+          - if user_signed_in?
+            %div.menu
+              = menu :id =>"mainMenu", :class=>"menu" do |m|
+                = m.users User.model_name.human, users_path
+                = m.groups Group.model_name.human, groups_path
+
       %div.content
         %div.content_resize
           %div.mainbar
