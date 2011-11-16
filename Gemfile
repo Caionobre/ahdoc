@@ -9,6 +9,8 @@ gem 'pg', '0.11.0'
 gem 'haml', '3.1.3'
 gem 'sass', '3.1.10'
 
+gem "menu_builder", '0.4.2'
+
 gem 'inherited_resources', '1.3.0'
 
 gem 'heroku'
