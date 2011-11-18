@@ -1,4 +1,6 @@
 Ahdoc::Application.routes.draw do
+  resources :systems
+
   root :to => 'dashboard#index'
 
   devise_for :users

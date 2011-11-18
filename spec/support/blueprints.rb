@@ -57,3 +57,7 @@ User.blueprint do
   email       {"jhon.doe@salus.com"}
   password    {"123456"}
 end
+
+System.blueprint do
+  name       {'ahdoc'}
+end

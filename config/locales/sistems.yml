@@ -1,0 +1,13 @@
+pt-BR:
+  activerecord:
+    models:
+      system:
+        one: "Sistema"
+        other: "Sistemas"
+
+    attributes:
+      system:
+        name: "Nome"
+        description: "Descrição"
+        version: "Versão"
+

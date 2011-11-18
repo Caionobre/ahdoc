@@ -1,0 +1,2 @@
+class SystemsController < InheritedController
+end
