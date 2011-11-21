@@ -1,5 +1,6 @@
 Ahdoc::Application.routes.draw do
   resources :systems do
+    resources :databases
     resources :groups
   end
 
