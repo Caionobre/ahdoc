@@ -1,0 +1,14 @@
+pt-BR:
+  activerecord:
+    models:
+      database:
+        one: "Banco de Dados"
+        other: "Bancos de Dados"
+
+    attributes:
+      database:
+        name: "nome"
+        description: "Descrição"
+        engineer: "Plataforma"
+        version: "versão"
+
