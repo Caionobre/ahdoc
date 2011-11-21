@@ -1,8 +1,8 @@
 class GroupsController < InheritedController
-
+  belongs_to :system
 protected
   def up_path
-    groups_path
+    systems_path
   end
   
   helper_method :up_path
