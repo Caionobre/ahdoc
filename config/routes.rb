@@ -1,5 +1,7 @@
 Ahdoc::Application.routes.draw do
-  resources :systems
+  resources :systems do
+    resources :groups
+  end
 
   root :to => 'dashboard#index'
 
