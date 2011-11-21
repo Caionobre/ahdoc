@@ -17,6 +17,7 @@
       %td
         = edit_link_to resource
         = destroy_link_to resource
+        = link_to Group.model_name.human, system_groups_path(resource), :class => 'button'
 
 %br
 
