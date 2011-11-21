@@ -7,8 +7,8 @@
 
       %ul
         - resource.errors.full_messages.each do |msg|
-        %li
-          = msg
+          %li
+            = msg
 
   %div.field
     = f.label :name
@@ -18,7 +18,7 @@
   %div.field
     = f.label :description
     %br
-    = f.text_area :description
+    = f.text_area :description, :rows => 5
 
   %div.field
     = f.label :engineer
@@ -32,3 +32,4 @@
 
   %div.actions
     = f.submit
+    = back_link_to
