@@ -1,8 +1,19 @@
 #encoding: utf-8
 require 'machinist/caching/active_record'
 
+User.blueprint do
+  name        {"Jhon Doe"}
+  email       {"jhon.doe@salus.com"}
+  password    {"123456"}
+end
+
+System.blueprint do
+  name       {'ahdoc'}
+end
+
 Group.blueprint do
-  title {"Contrato"}
+  system_id {System.make!.id}
+  title     {"User"}
 end
 
 Actor.blueprint do
@@ -50,14 +61,4 @@ Prototype.blueprint do
   document
   description {"Figura 1"}
   link {"/home/fig1.png"}
-end
-
-User.blueprint do
-  name        {"Jhon Doe"}
-  email       {"jhon.doe@salus.com"}
-  password    {"123456"}
-end
-
-System.blueprint do
-  name       {'ahdoc'}
 end

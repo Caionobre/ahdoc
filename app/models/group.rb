@@ -1,10 +1,12 @@
 class Group < ActiveRecord::Base
+  belongs_to :system
   has_many :actors
   has_many :documents
 
-  validates :title, :presence => true
-  validates :title, :length => {:maximum => 200},
-                    :uniqueness => true, :allow_blank => true
+  validates :system, :presence => true
+  validates :title, :presence => true,
+                    :length => {:maximum => 200, :allow_blank => true},
+                    :uniqueness => {:scope => :system_id, :allow_blank => true}
 
   before_destroy :can_be_destroyed_when_there_are_not_actors_and_documents
 

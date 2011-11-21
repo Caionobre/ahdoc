@@ -3,17 +3,19 @@ require File.expand_path("spec/spec_helper")
 
 describe Group do
   context "association" do
+    it {should belong_to :system}
     it {should have_many :actors}
     it {should have_many :documents}
   end
   
   context "validations" do
+    it {should validate_presence_of :system}
     it {should validate_presence_of :title}
     it {should ensure_length_of(:title).is_at_most(200)}
 
     context "should be unique" do
       before(:each){ Group.make! }
-      it {should validate_uniqueness_of :title }
+      it {should validate_uniqueness_of(:title).scoped_to(:system_id) }
     end
 
     it "can be deleted when there aren't actors and documents" do
@@ -37,7 +39,7 @@ describe Group do
   end
 
   it 'to_s should return title to_s' do
-    subject.title = "Contract"
-    subject.to_s.should == "Contract"
+    subject.title = "user"
+    subject.to_s.should == "user"
   end
 end
