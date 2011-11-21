@@ -1,0 +1,34 @@
+= form_for(resource, :url => resource_form_path)  do |f|
+  - if resource.errors.any?
+    %div#error_explanation
+      %h2
+        = pluralize(resource.errors.count, "error")
+        prohibited this database from being saved:
+
+      %ul
+        - resource.errors.full_messages.each do |msg|
+        %li
+          = msg
+
+  %div.field
+    = f.label :name
+    %br
+    = f.text_field :name
+
+  %div.field
+    = f.label :description
+    %br
+    = f.text_area :description
+
+  %div.field
+    = f.label :engineer
+    %br
+    = f.text_field :engineer
+
+  %div.field
+    = f.label :version
+    %br
+    = f.text_field :version
+
+  %div.actions
+    = f.submit
