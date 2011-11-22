@@ -13,7 +13,8 @@ end
 
 Database.blueprint do
   system_id {System.make!.id}
-  name      {'ahdoc'}
+  name      {'ahdoc_test'}
+end
 
 Table.blueprint do
   database
