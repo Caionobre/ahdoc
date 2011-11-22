@@ -17,7 +17,7 @@ describe System do
       it {should validate_uniqueness_of(:name)}
     end
 
-    it "can be deleted when there aren't groups" do
+    it "can be deleted when there aren't groups or databases" do
       subject.destroy
       subject.destroyed?.should be_true
     end
