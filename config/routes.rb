@@ -15,6 +15,10 @@ Ahdoc::Application.routes.draw do
     resources :items
   end
 
+  resources :databases do
+    resources :tables
+  end
+
   resources :groups do
     resources :actors
     resources :documents
