@@ -14,6 +14,10 @@ end
 Database.blueprint do
   system_id {System.make!.id}
   name      {'ahdoc'}
+
+Table.blueprint do
+  database
+  name      {'Users'}
 end
 
 Group.blueprint do
