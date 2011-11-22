@@ -1,9 +1,4 @@
 Ahdoc::Application.routes.draw do
-  resources :systems do
-    resources :databases
-    resources :groups
-  end
-
   root :to => 'dashboard#index'
 
   devise_for :users
@@ -11,8 +6,9 @@ Ahdoc::Application.routes.draw do
 
   get 'dashboard' => 'dashboard#index'
 
-  resources :alternative_flows do
-    resources :items
+  resources :systems do
+    resources :databases
+    resources :groups
   end
 
   resources :databases do
@@ -30,5 +26,9 @@ Ahdoc::Application.routes.draw do
     resources :alternative_flows
     resources :posconditions
     resources :prototypes
+  end
+
+  resources :alternative_flows do
+    resources :items
   end
 end
