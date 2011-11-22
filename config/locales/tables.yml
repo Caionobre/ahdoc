@@ -1,0 +1,11 @@
+pt-BR:
+  activerecord:
+    models:
+      table:
+        one: "Tabela"
+        other: "Tabelas"
+
+    attributes:
+      table:
+        name: "nome"
+        description: "Descrição"
