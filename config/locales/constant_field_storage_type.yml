@@ -1,0 +1,16 @@
+#encoding: utf-8
+pt-BR:
+  enumerations:
+    constant/field/storage_type:
+      primary_key: "Primary Key"
+      foreign_key: "Foreign Key"
+      char: "Char"
+      varchar: "Varchar"
+      integer: "Integer"
+      double: "Double"
+      decimal: "Decimal"
+      numeric: "Numeric"
+      date: "Date"
+      datetime: "Datetime"
+      time: Time
+      timestamp: TimeStamp
