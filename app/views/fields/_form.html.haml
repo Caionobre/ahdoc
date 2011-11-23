@@ -18,7 +18,7 @@
   %div.field
     = f.label :storage_type
     %br
-    = f.select :storage_type, Constant::Field::StorageType.to_a
+    = f.select :storage_type, Constant::Field::StorageType.to_a, :prompt => true
 
   %div.field
     = f.label :description
@@ -36,11 +36,11 @@
     = f.text_field :length
 
   %div.field
-    = f.checkbox :nullable
+    = f.check_box :nullable
     = f.label :nullable
 
   %div.field
-    = f.checkbox :auto_increment
+    = f.check_box :auto_increment
     = f.label :auto_increment
 
   %div.actions
