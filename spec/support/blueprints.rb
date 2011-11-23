@@ -21,6 +21,14 @@ Table.blueprint do
   name      {'Users'}
 end
 
+Field.blueprint do
+  table
+  name         {'id'}
+  storage_type {Constant::Field::StorageType::PRIMARY_KEY}
+  nullable     {false}
+  description  {'This is a primary key`s field  of the table Users'}
+end
+
 Group.blueprint do
   system_id {System.make!.id}
   title     {"User"}
