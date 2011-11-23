@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.10'
 
 gem 'devise', '1.4.9'
+gem 'enumerate_it', '0.7.7'
 
 gem 'pg', '0.11.0'
 
