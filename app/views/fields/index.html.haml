@@ -5,11 +5,15 @@
     %th
       = resource_class.human_attribute_name :name
     %th
+      = resource_class.human_attribute_name :storage_type
+    %th
 
   - collection.each do |resource|
     %tr
       %td
         = resource.name
+      %td
+        = resource.storage_type_humanize
       %td
         = edit_link_to resource
         = destroy_link_to resource
