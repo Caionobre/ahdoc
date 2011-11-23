@@ -13,6 +13,7 @@
       %td
         = edit_link_to resource
         = destroy_link_to resource
+        = link_to Field.model_name.human, table_fields_path(resource)
 
 %br
 
