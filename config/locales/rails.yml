@@ -37,7 +37,7 @@
       last_word_connector: " e "
 
     select:
-      prompt: "Por favor selecione"
+      prompt: "Selecione"
 
   number:
     format:
@@ -146,9 +146,10 @@
       minute: "Minuto"
       second: "Segundo"
 
+  # usado no select(combobox)
   helpers:
     select:
-      prompt: "Por favor selecione"
+      prompt: "Selecione"
 
     submit:
       create: 'Criar %{model}'

@@ -2,8 +2,8 @@
 pt-BR:
   enumerations:
     constant/field/storage_type:
-      primary_key: "Primary Key"
-      foreign_key: "Foreign Key"
+      primary_key: "Chave Primária"
+      foreign_key: "Chave Estrangeira"
       char: "Char"
       varchar: "Varchar"
       integer: "Integer"

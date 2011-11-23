@@ -6,13 +6,13 @@ pt-BR:
         other: "Campos"
 
     attributes:
-      table:
+      field:
         table: "Tabela"
         table_id: "Tabela"
         name: "Nome"
         description: "Descrição"
         storage_type: "Tipo de Armazenamento"
-        nulable: "Aceita nulo"
-        auto_increment: "Aceita incremento"
+        nullable: "Aceita nulo?"
+        auto_increment: "Aceita incremento?"
         default: 'Valor Padrão'
         length: 'Tamanho Máximo'
