@@ -5,6 +5,7 @@ describe Table do
   context "association" do
     it {should belong_to :database}
     it {should have_many :fields}
+    it {should have_and_belong_to_many :documents}
   end
   
   context "validations" do
@@ -27,6 +28,17 @@ describe Table do
 
       subject.destroy
       subject.destroyed?.should be_false
+    end
+  end
+
+  context "callbacks" do
+    pending "test delete all documents before exclude table" do
+      it "deleted fields when there was" do
+        subject = stub_model Table, :document_ids => [stub_model(Document).id]
+
+        subject.destroy
+        subject.document_ids.should have(:no).items
+      end
     end
   end
 
