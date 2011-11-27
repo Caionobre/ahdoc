@@ -31,8 +31,4 @@ Ahdoc::Application.routes.draw do
     resources :posconditions
     resources :prototypes
   end
-
-  resources :alternative_flows do
-    resources :items
-  end
 end
