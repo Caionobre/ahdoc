@@ -5,6 +5,7 @@ describe Document do
   context "association" do
     it {should belong_to :actor}
     it {should belong_to :group}
+    it {should have_and_belong_to_many :tables}
 
     Document::DEPENDENCIES.each do |dependency|
       it {should have_many dependency}
@@ -32,6 +33,16 @@ describe Document do
 
         subject.destroy
         subject.destroyed?.should be_false
+      end
+    end
+  end
+  context "callbacks" do
+    pending "test delete all tables before exclude document" do
+      it "deleted tables when there was" do
+        subject = stub_model Document, :table_ids => [stub_model(Table).id]
+
+        subject.destroy
+        subject.table_ids.should have(:no).items
       end
     end
   end
