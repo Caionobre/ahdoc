@@ -1,6 +1,6 @@
 class AlternativeFlow < ActiveRecord::Base
   belongs_to :document
-  has_many :items
+  has_many :items, :class_name => "AlternativeFlow::Item"
   
   validates :title, :order, :presence => true
   validates :title, :length => {:maximum => 255},

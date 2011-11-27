@@ -26,7 +26,7 @@ describe AlternativeFlow do
     end
 
     it "can't be deleted when there are items" do
-      subject = stub_model AlternativeFlow, :items => [stub_model(Item)]
+      subject = stub_model AlternativeFlow, :items => [stub_model(AlternativeFlow::Item)]
 
       subject.destroy
       subject.destroyed?.should be_false
