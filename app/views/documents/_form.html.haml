@@ -22,7 +22,7 @@
   %div.field
     = f.label :actor_id
     %br
-    = f.select :actor_id, actors_for_select(parent), {:prompt => 'Selecione'}
+    = f.select :actor_id, actors_for_select(parent), {:prompt => true}
 
   %div.field
     = f.label :use_case 
