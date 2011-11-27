@@ -63,7 +63,7 @@ AlternativeFlow.blueprint do
   order {1}
 end
 
-Item.blueprint do
+AlternativeFlow::Item.blueprint do
   alternative_flow
   flow {"Alternativo A1"}
   order {1}
