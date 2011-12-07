@@ -29,6 +29,11 @@ Field.blueprint do
   description  {'This is a primary key`s field  of the table Users'}
 end
 
+Index.blueprint do
+  table
+  name          {'index'}
+end
+
 Group.blueprint do
   system_id {System.make!.id}
   title     {"User"}

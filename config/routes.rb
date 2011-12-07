@@ -1,4 +1,5 @@
 Ahdoc::Application.routes.draw do
+
   root :to => 'dashboard#index'
 
   devise_for :users
@@ -17,6 +18,7 @@ Ahdoc::Application.routes.draw do
 
   resources :tables do
     resources :fields
+    resources :indices
   end
 
   resources :groups do

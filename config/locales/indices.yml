@@ -1,0 +1,12 @@
+pt-BR:
+  activerecord:
+    models:
+      index:
+        one: "Índice"
+        other: "Índices"
+
+    attributes:
+      index:
+        name: "Nome"
+        email: "Descrição"
+
