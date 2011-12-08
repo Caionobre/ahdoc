@@ -1,11 +1,12 @@
 # encoding: utf-8
-require File.expand_path("spec/spec_helper")
+require 'spec_helper'
 
 describe Table do
   context "association" do
     it {should belong_to :database}
     it {should have_many :fields}
     it {should have_many :indices}
+    it {should have_many :constraints}
     it {should have_and_belong_to_many :documents}
   end
   
