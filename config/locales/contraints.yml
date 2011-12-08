@@ -1,0 +1,12 @@
+pt-BR:
+  activerecord:
+    models:
+      constraint:
+        one: "Restrição"
+        other: "Restrições"
+
+    attributes:
+      constraint:
+        name: "Nome"
+        description: "Descrição"
+

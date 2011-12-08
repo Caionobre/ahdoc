@@ -34,6 +34,11 @@ Index.blueprint do
   name          {'index'}
 end
 
+Constraint.blueprint do
+  table 
+  name {'constraint'} 
+end
+
 Group.blueprint do
   system_id {System.make!.id}
   title     {"User"}
