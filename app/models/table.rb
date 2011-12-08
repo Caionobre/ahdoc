@@ -11,6 +11,7 @@ class Table < ActiveRecord::Base
 
   before_destroy :can_be_destroyed_when_there_are_not_fields
   before_destroy :destroyed_when_there_are_documents
+  before_destroy :can_be_destroyed_when_there_are_not_indices
 
   def to_s
     name
@@ -23,5 +24,9 @@ protected
   def destroyed_when_there_are_documents
     document_ids = []
     save :validate => false
+  end
+  
+  def can_be_destroyed_when_there_are_not_indices
+    indices.empty?
   end
 end
