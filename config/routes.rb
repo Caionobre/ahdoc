@@ -19,6 +19,7 @@ Ahdoc::Application.routes.draw do
   resources :tables do
     resources :fields
     resources :indices
+    resources :constraints
   end
 
   resources :groups do
